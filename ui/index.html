@@ -1,18 +1,75 @@
 <!doctype html>
 <html>
-    <head>
-        <link href="/ui/style.css" rel="stylesheet" />
-    </head>
-    <body>
-        <div class="center">
-            <img src="/ui/madi.png" class="img-medium"/>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="/ui/style.css" rel="stylesheet" />
+    
+</head>
+
+<body>
+    <div class="container col-lg-6 col-lg-push-3 col-md-6 col-md-push-3 col-sm-6 col-sm-push-3 col-xs-6 col-xs-push-3 ">
+        <br/>
+        <div>
+            <img src="https://scontent.fccu2-1.fna.fbcdn.net/v/t1.0-9/16114430_746596282166140_8351092300362274809_n.jpg?oh=1c64eae0a173dfce4010603b29678059&oe=590F20F7"
+                class="img-medium profilePic" alt="MyProfilePic" />
         </div>
-        <br>
-        <div class="center text-big bold">
-            Hi! I am Ritwick Dey, It is my first WebApp at Hasura :)
-			<h5>Hi, edited from Localhost</h5>
+        <div>
+            <br/>
+            <hr/>
+            <div style="text-align: right">
+                <button id="addFriendBtn" class="btn btn-success" style="height: 32px">Add Friend</button>
+            </div>
+            <br/>
         </div>
-        <script type="text/javascript" src="/ui/main.js">
-        </script>
-    </body>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <tr>
+                    <td>Name:</td>
+                    <td>Ritwick Dey</td>
+                </tr>
+                <tr>
+                    <td>Stream:</td>
+                    <td>Computer Science and Engineering</td>
+                </tr>
+                <tr>
+                    <td>Sem:</td>
+                    <td>4th Sem</td>
+                </tr>
+                <tr>
+                    <td>Home</td>
+                    <td>West Bengal</td>
+                </tr>
+                <tr>
+                    <td>Social Account</td>
+                    <td>
+                        <div>
+                            <span class="padding-5">
+                                <a href="http://facebook.com/DeyRitwick" target="_blank" >
+                                    <img style="width:20px;height:20px" src="https://img.clipartfest.com/d4d20b670dd8431d909895cbdedc65cf_facebook-logo-png-transparent-facebook-clipart-transparent-background_300-300.png" alt="facebook">
+                                </a>
+                            </span>
+                            
+                            <span class="padding-5">
+                                <a href="http://twitter.com/Dey_Ritwick" target="_blank">
+                                    <img style="width:20px;height:20px" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Twitter_bird_logo_2012.svg/220px-Twitter_bird_logo_2012.svg.png" alt="twitter">
+                                 </a>  
+                            </span>       
+                        </div>
+                    </td> 
+                </tr>
+                <tr>
+                    <td>Total Friends</td>
+                    <td id="totalFriendCount">0</td>
+                </tr>
+            </table>
+            <hr/>
+        </div>
+    </div>
+    <script type="text/javascript" src="/ui/main.js"> </script>
+</body>
+
 </html>
