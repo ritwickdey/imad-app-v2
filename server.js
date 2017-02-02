@@ -8,7 +8,7 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-var counter = 0;
+var counter = 51;
 app.get('/friend/counter',function(req, res){
   counter++;
   res.send(counter.toString());
